@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+::before, ::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.header{
+    height: 100vh;
+   width: 100%;
+   background-image: url("../images/hero.jpg") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:50% 50%;
+   margin: 0 auto;
+   padding: 1.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header .header-container{
+    width: 90%;
+    z-index: 2;
+    position: absolute;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icons .header-icon{
+    color: white;
+}
+
+.main-menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+.main-menu a{
+    color: white;
+}
+
+.main-menu li+li{
+    margin-left: 10%;
+}
+
+
+.overlay{
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aside{
+    width: 350px;
+    background-color: rgba(255, 249, 249, 0.75);
+    padding: 2rem 1.7rem;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    pad: 35px 20px;
+}
+ .aside h1{
+    font-weight: 500px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+ }
+.show-now a{
+    color: black;
+    border-bottom: 0.5px solid black;
+    font-family: "dosis" sans-serif;
+}
+
+@media (max-width:900px)
+{
+ .main-menu{
+    display: none;
+ }
+}
+
+/* desktop styling */
+@media (min-width:900px){
+
+.header .aside{
+    width: 400px;
+    pad: 45px 30px;
+}
+
+.aside-items{
+    width: 360px;
+    text-align: center;
+    margin: 0 auto;
+}
+    
+}
