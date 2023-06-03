@@ -1,10 +1,14 @@
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cedarville+Cursive&family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
     box-sizing: border-box;
+     margin: 0;
+    padding: 0;
 }
 
 ::before, ::after{
@@ -12,8 +16,7 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
+   
     font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -69,7 +72,7 @@ ul li{
 
 
 .overlay{
-    position: fixed; 
+    position: absolute; 
     top: 0; 
     right: 0; 
     bottom: 0; 
@@ -97,17 +100,88 @@ ul li{
     line-height: 1.2;
     margin-bottom: 15px;
  }
-.show-now a{
+.shop-now a{
     color: black;
     border-bottom: 0.5px solid black;
     font-family: "dosis" sans-serif;
 }
 
+/* hero message styling */
+
+main{
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.message-section{
+    width: 100%;
+}
+
+.message-section img{
+    width: 100%;
+}
+
+.message{
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.message-text{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+    position: absolute;
+    top: 15px;
+    width: 300px;
+    height: 150px;
+}
+
+.message-text h3{
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.1;
+    
+}
+
+.message-shopnow{
+    padding-left: 18px;
+}
+
+.message-heading{
+    width: 155px;
+    margin-bottom: 1em;
+}
+
+.dash{
+    font-size: 25px;
+    font-weight: 300;
+   
+}
+
+
+
+
 @media (max-width:900px)
 {
  .main-menu{
     display: none;
+    top: 3em;
  }
+}
+
+
+/* tablet styling */
+@media (min-width:650px){
+    .message-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em;
+    }
 }
 
 /* desktop styling */
@@ -115,13 +189,53 @@ ul li{
 
 .header .aside{
     width: 400px;
-    pad: 45px 30px;
+    padding: 45px 30px;
 }
+
+
 
 .aside-items{
     width: 360px;
     text-align: center;
     margin: 0 auto;
 }
-    
+
+.message-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+}
+
+.message-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: 15px;
+    width: 400px;
+    height: 85%;
+}
+
+.message-heading{
+    width: 240px;
+    align-self: flex-start;
+    margin-bottom: .5em;
+}
+
+.message-text h3{
+    font-weight: 400;
+}
+
+.message-shopnow{
+    padding-left: 8px;
+}
+.message-shopnow .dash{
+    margin-left: 0.5em;
+}    
+
+
+
 }
